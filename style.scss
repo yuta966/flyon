@@ -1,0 +1,331 @@
+* {
+    box-sizing: border-box;
+}
+
+html,body {
+    font-family: 'Kosugi Maru', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    margin: 0;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+h3 {
+    padding: 10px 0;
+    margin: 0;
+    text-align: left;
+}
+
+/* タイトルの設定 */
+.title {
+    h2 {
+        text-align: left;
+        border-bottom: 2px solid #d0d0d0;
+        padding: 5px;
+        margin: 0;
+        color: black;
+    }
+
+    /* ロゴの設定 */
+    .flyon_logo {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        padding: 0 5px 0 0;
+        margin: 0px;
+        bottom: -5px;
+    }
+}
+
+/* テキストの設定 */
+.content {
+    padding: 10px 10px;
+    text-align: left;
+}
+
+.content-left, .content-right {
+    float: left;
+    width: 50%;
+}
+
+.clear {
+    clear: left;
+}
+
+/* ヘッダー */
+header {
+    background-color: black;
+    color: white;
+
+    height: 60px;
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+
+    .material-icons {
+        position: relative;
+        top: 20px;
+        left: 10px;
+        color: white;
+    }
+
+    .logo {
+        width: 227px;
+        height: 52px;
+        position: absolute;
+        top: 2px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+}
+
+/* フェードアウトするスポンサー */
+.advertiser-fadeOut {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 1000px;
+
+    display: none;
+    z-index: 2;
+    color:black;
+
+    h2 {
+        margin: 0 auto;
+    }
+}
+
+/* ハンバーガー */
+.hamburger_list {
+    text-align: left;
+    background-color: black;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    height: 100%;
+
+    display: none;
+    z-index: 3;
+    position: fixed;
+
+    li {
+        padding: 10px 0 10px 40px;
+        text-align: left;
+    }
+
+    a {
+        font-size: 15px;
+        color: white;
+    }
+}
+
+/* menu */
+.menu {
+    background-color: #d0d0d0;
+    height: 40px;
+    position: relative;
+    top: 50px;
+    width: 100%;
+    border-radius: 0px;
+    display: none;
+
+    ul {
+        margin: 0 auto;
+        height: 100%;
+    }
+
+    li {
+        float: left;
+        height: 30px;
+        width: 20%;
+        padding: 5px;
+        border-right: 1px solid white;
+    }
+
+    a {
+        color: black;
+        margin: auto;
+    }
+}
+
+/* Top */
+.top {
+    .top-slider {
+        height: 600px;
+    }
+}
+
+
+/* 私たちの活動 */
+.activities {
+
+}
+
+/* ギャラリー */
+.gallery {
+    .gallery_slider {
+        img {
+            padding: 20px 30px;
+        }
+    }
+}
+
+/* SNS */
+.SNS {
+    p {
+        text-align: center;
+    }
+
+    iframe {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .line {
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    .YouTube {
+        iframe {
+            height: 200px;
+            width: 300px;
+        }
+    }
+
+    .Podcasts {
+        iframe {
+            height: 450px;
+        }
+    }
+}
+
+/* 支援者 */
+.advertiser a{
+    padding-top: 10px;
+    text-align: left;
+}
+
+/* カレンダー */
+
+/* お問い合わせ */
+.contact-form {
+    height: 720px;
+    padding-top: 60px;
+
+    .Form-item {
+        p {
+            margin: 0;
+            padding: 10px 0;
+            text-align: left;
+        }
+
+        input, textarea {
+            width: 100%;
+            max-width: 700px;
+            display: block;
+            margin: 0;
+        }
+
+        input {
+            height: 30px;
+        }
+
+        textarea {
+            height: 200px;
+        }
+    }
+}
+
+/* フッター */
+footer {
+    background-color:black;
+    color: white;
+
+    width: 100%;
+    height: 60px;
+
+    a {
+        float: right;
+        color: white;
+        font-size: 10px;
+        padding: 5px;
+    }
+}
+
+/* メディアクエリ */
+@media screen and (max-width: 670px) {
+    .content-left, .content-right {
+        width: 100%;
+    }
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../font/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(../font/MaterialIcons-Regular.woff2) format('woff2'),
+      url(../font/MaterialIcons-Regular.woff) format('woff'),
+      url(../font/MaterialIcons-Regular.ttf) format('truetype');
+  }
+
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
